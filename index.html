@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header> <img class="logo" src="./img/Logo.png" alt="Logo"></header>
+    <div class="container__general">
+        <div class="container__texto">
+            <div class="container__texto__principal">
+                <input id="textoInput" type="text" placeholder="Ingrese el texto aquí">
+            </div>    
+            <div class="container__botones">
+                <p> <img src="./img/Vector.png" alt="Vector"> Solo letras minúsculas y sin acentos</p>
+                <button class="boton__principal" onclick="encriptar()">Encriptar</button>
+                <button class="boton__secundario" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div id="mostrar__texto-encriptado" class="container__texto-encriptado">
+            <img class="imagen__principal" src="./img/Muñeco.png" alt="Muñeco buscando">
+            <h2>Ninún mensaje fue <br> encontrado</h2>    
+            <p id="textoEncriptado">Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            <button class="boton__secundario" onclick="copiarTexto()" id="copiar" style="display: none;">Copiar</button>
+        </div>
+    </div>
+
+    <footer><p>Desarrollado por Gabriele Llerena</p></footer>
+    <script src="app.js"></script>
+</body>
+</html>
